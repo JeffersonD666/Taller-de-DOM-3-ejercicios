@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XXXXX</title>
+    <style>
+        .clase1{
+            color: aqua;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 45px;
+        }
+
+        .clase2{
+            color: rgb(255, 0, 200);
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div class="clase1" id="id1">
+        <p id="texto">XD</p>
+        <button onclick="removedor()">remover</button>
+
+    </div>
+</body>
+<script>
+    function removedor(){
+        const dom= document.querySelector(".clase1");
+        dom.removeAttribute("class");
+        console.log(dom);
+    }
+</script>
+</html>

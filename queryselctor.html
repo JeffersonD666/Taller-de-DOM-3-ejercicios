@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XXXXX</title>
+
+    <style>
+        .div1 {
+            background-color: aqua;
+        }
+
+        .div2 {
+            background-color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="div1">
+        <p id="texto">XD</p>
+        <button onclick="cambiar()">Cambiar texto</button>
+        <script>
+            function cambiar(){
+                const parrafo= document.querySelector("#texto");
+                parrafo.textContent="adios mundo";
+            }
+        </script>
+    </div>
+
+</body>
+</html>

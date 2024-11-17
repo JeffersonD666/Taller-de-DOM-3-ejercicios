@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de outerHTML</title>
+</head>
+<body>
+    <div id="miDiv">
+        <h2>Título XD</h2>
+        <p>hola mundo</p>
+    </div>
+    <button id="cambiar">Cambiar Contenido</button>
+
+    <script>
+        const miDiv = document.getElementById('miDiv');
+
+        document.getElementById('cambiar').addEventListener('click', () => {
+            miDiv.outerHTML = `
+                <div id="miDiv">
+                    <h2>Título ZZZ</h2>
+                    <p>adios mundoo</p>
+                    
+                </div>
+            `;
+        });
+    </script>
+</body>
+<a ></a>
+</html>
